@@ -1,0 +1,52 @@
+@charset "utf-8";
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "microsoft yahei", arial, sans-serif;
+}
+a:hover {
+  text-decoration: none;
+}
+header {
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+  background-color: #52966a;
+}
+#map {
+  height: calc(100vh - 60px);
+  position: relative;
+}
+#map .toolbar {
+  position: absolute;
+  top: 40px;
+  left: 100px;
+  z-index: 1000;
+}
+#map .toolbar ul {
+  display: flex;
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+}
+#map .toolbar ul li {
+  padding: 8px 0;
+  font-weight: 500;
+}
+#map .toolbar ul li a {
+  display: inline-flex;
+  align-items: center;
+  padding: 0 20px;
+  color: #555;
+  border-right: 1px dashed #ccc;
+}
+#map .toolbar ul li a:hover {
+  opacity: 0.6;
+}
+#map .toolbar ul li .layui-icon {
+  margin-right: 5px;
+}
