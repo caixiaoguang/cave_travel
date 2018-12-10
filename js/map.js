@@ -108,7 +108,7 @@ $(function () {
 
 
     function onEachFeature(feature, layer) {
-        layer.bindPopup('<table class="layui-table" lay-size="sm"><colgroup><col><col><col></colgroup><thead><tr><th>属性</th><th>值</th></tr> </thead<tbody><tr><td>经纬度</td><td>'+ feature.geometry.coordinates +'</td></tr><tr><td>name</td><td></td></tr><tr><td>width</td><td></td></tr><tr><td>height</td><td></td></tr><tr><td>描述</td><td></td></tr></tbody></table>');
+        layer.bindPopup('<table class="layui-table" lay-size="sm"><colgroup><col><col><col></colgroup><thead><tr><th>属性</th><th>值</th></tr> </thead<tbody><tr><td>经纬度</td><td>' + feature.geometry.coordinates + '</td></tr><tr><td>name</td><td></td></tr><tr><td>width</td><td></td></tr><tr><td>height</td><td></td></tr><tr><td>描述</td><td></td></tr></tbody></table>');
     }
 
 
@@ -128,36 +128,268 @@ $(function () {
                 });
             }
         }).addTo(map);
-
-
     }
 
+    var cavePoint = {
+        "type": "FeatureCollection",
+        "features": [
+            {
+                "type": "Feature",
+                "properties": {},
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        106.74041748046875,
+                        27.15936422843682
+                    ]
+                }
+            },
+            {
+                "type": "Feature",
+                "properties": {},
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        107.1551513671875,
+                        27.09336363811584
+                    ]
+                }
+            },
+            {
+                "type": "Feature",
+                "properties": {},
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        106.87774658203125,
+                        26.983276203452657
+                    ]
+                }
+            },
+            {
+                "type": "Feature",
+                "properties": {},
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        106.44653320312499,
+                        26.92206991673282
+                    ]
+                }
+            },
+            {
+                "type": "Feature",
+                "properties": {},
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        106.3311767578125,
+                        26.725986812271756
+                    ]
+                }
+            },
+            {
+                "type": "Feature",
+                "properties": {},
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        106.42730712890625,
+                        26.477948705162902
+                    ]
+                }
+            },
+            {
+                "type": "Feature",
+                "properties": {},
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        105.3369140625,
+                        26.83387451505858
+                    ]
+                }
+            },
+            {
+                "type": "Feature",
+                "properties": {},
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        105.44677734375,
+                        26.35742006833118
+                    ]
+                }
+            },
+            {
+                "type": "Feature",
+                "properties": {},
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        105.62255859375,
+                        25.898761936567023
+                    ]
+                }
+            },
+            {
+                "type": "Feature",
+                "properties": {},
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        105.633544921875,
+                        27.46928747369202
+                    ]
+                }
+            },
+            {
+                "type": "Feature",
+                "properties": {},
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        106.2103271484375,
+                        25.953105584547533
+                    ]
+                }
+            },
+            {
+                "type": "Feature",
+                "properties": {},
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        106.89147949218749,
+                        25.626668871238568
+                    ]
+                }
+            },
+            {
+                "type": "Feature",
+                "properties": {},
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        105.83129882812499,
+                        24.946219074360084
+                    ]
+                }
+            },
+            {
+                "type": "Feature",
+                "properties": {},
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        107.7154541015625,
+                        26.504988828743404
+                    ]
+                }
+            },
+            {
+                "type": "Feature",
+                "properties": {},
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        104.5513916015625,
+                        26.711266913515747
+                    ]
+                }
+            },
+            {
+                "type": "Feature",
+                "properties": {},
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        104.7052001953125,
+                        25.54244147012483
+                    ]
+                }
+            },
+            {
+                "type": "Feature",
+                "properties": {},
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        106.69647216796874,
+                        25.175116531621764
+                    ]
+                }
+            },
+            {
+                "type": "Feature",
+                "properties": {},
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        103.60107421874999,
+                        27.49852672279832
+                    ]
+                }
+            },
+            {
+                "type": "Feature",
+                "properties": {},
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        102.7001953125,
+                        26.02717014049738
+                    ]
+                }
+            },
+            {
+                "type": "Feature",
+                "properties": {},
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        103.447265625,
+                        23.986252599841798
+                    ]
+                }
+            },
+            {
+                "type": "Feature",
+                "properties": {},
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        103.42529296875,
+                        25.64152637306577
+                    ]
+                }
+            },
+            {
+                "type": "Feature",
+                "properties": {},
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        104.96337890625,
+                        23.58412603264412
+                    ]
+                }
+            },
+            {
+                "type": "Feature",
+                "properties": {},
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        100.1953125,
+                        25.62171595984575
+                    ]
+                }
+            }
+        ]
+    }
 
-    $.get('../data/cave.json', function (res) {
-        var cavePoint = res;
-        drawPoint(cavePoint)
-    })
-
-    table.render({
-        elem: '.caveinfo'
-        , height: 312
-        , url: '/demo/table/user/' //数据接口
-        , page: true //开启分页
-        , cols: [[ //表头
-            { field: 'id', title: 'ID', width: 80, sort: true, fixed: 'left' }
-            , { field: 'username', title: '用户名', width: 80 }
-            , { field: 'sex', title: '性别', width: 80, sort: true }
-            , { field: 'city', title: '城市', width: 80 }
-            , { field: 'sign', title: '签名', width: 177 }
-            , { field: 'experience', title: '积分', width: 80, sort: true }
-            , { field: 'score', title: '评分', width: 80, sort: true }
-            , { field: 'classify', title: '职业', width: 80 }
-            , { field: 'wealth', title: '财富', width: 135, sort: true }
-        ]]
-    });
-
-
-
+    drawPoint(cavePoint)
 
 })
 
