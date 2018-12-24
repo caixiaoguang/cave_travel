@@ -41,7 +41,7 @@ header {
   display: inline-flex;
   align-items: center;
   padding: 0 20px;
-  color: #555;
+  color: #52966a;
 }
 #map .toolbar ul li a:hover {
   opacity: 0.6;

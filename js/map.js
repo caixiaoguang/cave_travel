@@ -389,7 +389,25 @@ $(function () {
         ]
     }
 
-    drawPoint(cavePoint)
+    drawPoint(cavePoint);
+
+
+    //地图打印插件
+    var printer = L.easyPrint({
+        // tileLayer: normal,
+        sizeModes: ['Current', 'A4Landscape', 'A4Portrait'],
+        filename: 'myMap',
+        exportOnly: true,
+        hidden:true,
+        hideControlContainer: true
+    }).addTo(map);
+
+    function manualPrint() {
+        printer.printMap('CurrentSize', 'myMap')
+    }
+
+
+    $('#export-map').on('click', manualPrint)
 
 })
 

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>喀斯特洞穴旅游资源利用与信息管理系统</title>
+    <title>贵州省啊喀斯特洞穴资源信息共享系统</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./lib/layui/css/layui.css">
     <link rel="stylesheet" href="./lib/leaflet/leaflet.css">
@@ -14,7 +14,7 @@
 
 <body>
     <header>
-        <h1>喀斯特洞穴旅游资源利用与信息管理系统</h1>
+        <h1>贵州省啊喀斯特洞穴资源信息共享系统</h1>
     </header>
 
     <div class="container" id="map">
@@ -24,7 +24,7 @@
                 <li> <a><i class="layui-icon layui-icon-about"></i><span>洞穴信息</span></a></li>
                 <li><a><i class="layui-icon layui-icon-template-1"></i><span>三维</span></a></li>
                 <li> <a><i class="layui-icon layui-icon-survey"></i><span>统计</span></a></li>
-                <li> <a><i class="layui-icon layui-icon-download-circle"></i><span>导出地图</span></a></li>
+                <li> <a id="export-map"><i class="layui-icon layui-icon-download-circle"></i><span>导出地图</span></a></li>
             </ul>
         </div>
     </div>
@@ -33,6 +33,7 @@
 <script src="./lib/layui/layui.all.js"></script>
 <script src="./lib/leaflet/leaflet.js"></script>
 <script src="./lib/leaflet/leaflet.ChineseTmsProviders.js"></script>
+<script src="./lib/printMap.js"></script>
 <script src="./js/map.js"></script>
 
 </html>
